@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<resources>
+    <string name="app_name">Sound Mixer</string>
+    <string name="btnStart">Start</string>
+    <string name="btnStop">Stop</string>
+    <string name="btnPlay">Play</string>
+    <string name="btnSound">Sound</string>
+    <string name="btnEnd">End</string>
+    <string name="btnLoop">Loop</string>
+    <string name="btnReset">Reset</string>
+    <string name="btnLoop1">Loop 1 Play</string>
+    <string name="btnLoop2">Loop 2 Play</string>
+    <string name="btnLoop3">Loop 3 Play</string>
+    <string name="btnLoop4">Loop 4 Play</string>
+    <string name="btnLoop5">Loop 5 Play</string>
+    <string name="btnLoop1Reset">Reset1</string>
+    <string name="btnLoop2Reset">Reset2</string>
+    <string name="btnLoop3Reset">Reset3</string>
+    <string name="btnLoop4Reset">Reset4</string>
+    <string name="btnLoop5Reset">Reset5</string>
+    <string name="btnPause">Pause</string>
+    <string name="btnAdd">Add</string>
+    <string name="title_splash">Title</string>
+</resources>
