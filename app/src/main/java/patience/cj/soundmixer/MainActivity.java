@@ -7,19 +7,11 @@ import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.media.PlaybackParams;
 import android.media.SoundPool;
-import android.net.Uri;
 import android.os.Build;
-import android.os.Environment;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
-import android.widget.Button;
 import android.widget.SeekBar;
-import patience.cj.soundmixer.Seekbars;
-import patience.cj.soundmixer.Buttons;
-import java.io.File;
-import java.sql.Time;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
@@ -59,8 +51,7 @@ public class MainActivity extends AppCompatActivity {
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         Buttons button = new Buttons();
         button.setButtonHandlers();
-        Seekbars seek = new Seekbars();
-        seek.initSeekBars();
+        initSeekBars();
         StartRecording media = new StartRecording();
         media.initRecorder();
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
@@ -91,11 +82,6 @@ public class MainActivity extends AppCompatActivity {
             default:
                 finish();
         }
-    }
-
-    public void seekVol(){
-        Seekbars seek = new Seekbars();
-        seek.seekVol();
     }
 
     public void loadSoundPool() {
