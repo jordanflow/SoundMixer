@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Sound Mixer</string>
+    <string name="btnEnd">End</string>
+</resources>
